@@ -1,0 +1,499 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTÓN FLECHA */
+.btn-flecha {
+    position:absolute;
+    top:208px; left:20px;
+    background: rgb(10, 10, 1);
+    color: rgb(244, 248, 6);
+    border: 4px solid rgb(255, 233, 36);
+    padding: 4px 12px;
+    font-size:20px;
+    border-radius:8px;
+    cursor:pointer;
+    z-index:20;
+    font-weight:bold;
+}
+
+/* MENÚ / INICIO */
+.btn-top {
+    position:absolute;
+    top:208px;
+    background: black;
+    color: white;
+    border: 3px solid yellow;
+    padding: 10px 20px;
+    font-size:14px;
+    border-radius:8px;
+    cursor:pointer;
+    z-index:20;
+    font-weight:bold;
+}
+
+#btn-menu { left:600px; }
+#btn-inicio { left:1180px; }
+
+/* 🔥 Imagen para cada revisión */
+.body-edc  { background-image: url("R EDC.JPG"); }
+.body-lln  { background-image: url("R LLN.JPG"); }
+.body-edcm { background-image: url("R EDCM.JPG"); }
+
+/* CUADROS DE TEXTO INDIVIDUALES */
+#box1 {
+    position: absolute;
+    top: 310px;
+    left: 10px;
+    width: 1100px;            /* Cambia el ancho aquí */
+    height: 100px;            /* Cambia la altura aquí */
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box2 {
+    position: absolute;
+    top: 335px;
+    left: 38px;
+    width: 1000px;             /* Más estrecho para texto vertical */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box3 {
+    position: absolute;
+    top: 360px;
+    left: 34px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box4 {
+    position: absolute;
+    top: 400px;
+    left: -23px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box5 {
+    position: absolute;
+    top: 425px;
+    left: 19px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box6 {
+    position: absolute;
+    top: 465px;
+    left: 34px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box7 {
+    position: absolute;
+    top: 505px;
+    left: 28px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box8 {
+    position: absolute;
+    top: 530px;
+    left: -65px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+/* CUADROS DE TEXTO INDIVIDUALES */
+#box9 {
+    position: absolute;
+    top: 310px;
+    left: 1px;
+    width: 1100px;            /* Cambia el ancho aquí */
+    height: 100px;            /* Cambia la altura aquí */
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box10 {
+    position: absolute;
+    top: 335px;
+    left: -18px;
+    width: 1000px;             /* Más estrecho para texto vertical */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box11 {
+    position: absolute;
+    top: 360px;
+    left: 25px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box12 {
+    position: absolute;
+    top: 385px;
+    left: -124px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box13 {
+    position: absolute;
+    top: 407px;
+    left: 57px;
+    width: 800px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box14 {
+    position: absolute;
+    top: 445px;
+    left: 56px;
+    width: 780px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box15 {
+    position: absolute;
+    top: 485px;
+    left: -40px;
+    width: 700px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box16 {
+    position: absolute;
+    top: 505px;
+    left: -55px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+/* CUADROS DE TEXTO INDIVIDUALES */
+#box17 {
+    position: absolute;
+    top: 310px;
+    left: -25px;
+    width: 1100px;            /* Cambia el ancho aquí */
+    height: 100px;            /* Cambia la altura aquí */
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box18 {
+    position: absolute;
+    top: 335px;
+    left: -21px;
+    width: 1000px;             /* Más estrecho para texto vertical */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box19 {
+    position: absolute;
+    top: 360px;
+    left: 13px;
+    width: 800px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box20 {
+    position: absolute;
+    top: 395px;
+    left: -151px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box21 {
+    position: absolute;
+    top: 416px;
+    left: 19px;
+    width: 800px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box22 {
+    position: absolute;
+    top: 472px;
+    left: 24px;
+    width: 780px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box23 {
+    position: absolute;
+    top: 510px;
+    left: -68px;
+    width: 700px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box24 {
+    position: absolute;
+    top: 535px;
+    left: -108px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+.btn-trampa1 {
+    position: absolute;
+    left: 50%;
+    width: 470px;
+    transform: translateX(-50%);
+    padding: 200 45px;
+    background: #32bebebd;
+    border: 3px solid rgba(61, 66, 66, 0.767);
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 262px; }
+    #btn-tdt         { margin-left: -400px; } 
+    
+.btn-trampa2 {
+    position: absolute;
+    left: 50%;
+    width: 700px;
+    transform: translateX(-35%);
+    padding: 200 45px;
+    background: #32bebebd;
+    border: 3px solid rgba(61, 66, 66, 0.767);
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 262px; }
+    #btn-tdt         { margin-left: 100px; } 
+    
+.btn-trampa3 {
+    position: absolute;
+    left: 50%;
+    width: 500px;
+    transform: translateX(-50%);
+    padding: 200 45px;
+    background: #32bebebd;
+    border: 3px solid rgba(61, 66, 66, 0.767);
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 262px; }
+    #btn-tdt         { margin-left: -400px; } 

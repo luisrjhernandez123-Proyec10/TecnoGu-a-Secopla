@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 390px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Flecha */
+.btn-flecha {
+    position: absolute;
+    top: 208px;
+    left: 20px;
+    background: black;
+    color: yellow;
+    border: 4px solid yellow;
+    padding: 4px 12px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Botones MENÚ / INICIO */
+.btn-top {
+    position: absolute;
+    top: 208px;
+    background: black;
+    color: white;
+    border: 3px solid yellow;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-menu { left: 600px; }
+#btn-inicio { left: 1180px; }
+
+/* Botones de trampas */
+.btn-trampa {
+    position: absolute;
+    left: 50%;
+    width: 268px;
+    transform: translateX(-50%);
+    padding: 14px;
+    background: #5cb359;
+    border: 3px solid rgba(68, 67, 67, 0.637);
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Posiciones verticales */
+#btn-edc        { top: 350px; }
+#btn-feromonas  { top: 350px; }
+#btn-edcm       { top: 350px; }
+#btn-lln        { top: 350px; }
+/* POSICIONES LATERALES PERSONALIZADAS (también como tú lo tenías) */
+#btn-edc         { margin-left: -500px;}  
+#btn-feromonas   { margin-left: -210px;}  
+#btn-edcm        { margin-left: 80px; }  
+#btn-lln         { margin-left: 380px; }  
+
+.btn-trampa1 {
+    position: absolute;
+    left: 50%;
+    width: 250px;
+    transform: translateX(-50%);
+    padding: 14px;
+    background: #2f95dabd;
+    border: 3px solid rgba(0, 0, 0, 0.637);
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 260px; }
+    #btn-tdt         { margin-left: -550px; } 

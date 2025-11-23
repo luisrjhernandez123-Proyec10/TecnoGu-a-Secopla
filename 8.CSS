@@ -1,0 +1,77 @@
+/* -------------------------------------------------- */
+/* FONDO DE INTOXICACIÓN RESPIRATORIA                 */
+/* -------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("INTOXICACION RESPIRATORIA.JPG");
+    background-size: cover;        /* Fondo ajustado sin deformarse */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* -------------------------------------------------- */
+/* CONTENEDOR PRINCIPAL                                */
+/* -------------------------------------------------- */
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------------------------- */
+/* CONTENEDOR DE BOTONES                               */
+/* -------------------------------------------------- */
+.buttons {
+    width: 85%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* -------------------------------------------------- */
+/* BOTONES                                             */
+/* -------------------------------------------------- */
+.buttons button {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.85);
+    color: #000;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.buttons button:active {
+    scale: 0.97;
+}
+
+/* -------------------------------------------------- */
+/* AJUSTES PARA CELULAR                                */
+/* -------------------------------------------------- */
+@media (max-width: 600px) {
+
+    .buttons {
+        width: 90%;
+        gap: 14px;
+    }
+
+    .buttons button {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+}

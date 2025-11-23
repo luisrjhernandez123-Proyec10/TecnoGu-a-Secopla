@@ -33,7 +33,7 @@ img {
 /* ----------------- INICIO DE SESIÓN ----------------- */
 body.login-page {
     height: 100vh;
-    background: url('inicio.jpg') center center;
+    background: url('inicio.PNG') center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -185,4 +185,5 @@ body.login-page {
         transform: translateY(-20px); /* 👈 Lo subimos sin mover PC */
     }
 }
+
 

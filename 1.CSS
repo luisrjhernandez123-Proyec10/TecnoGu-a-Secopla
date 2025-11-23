@@ -1,0 +1,118 @@
+/* --------------------------------------------- */
+/* Fondo general                                 */
+/* --------------------------------------------- */
+body.login-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("inicio.jpg");
+    background-size: cover;          /* Ajusta EXACTAMENTE al tamaño */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;           /* Baja el login como en tu diseño */
+    font-family: Arial, sans-serif;
+}
+
+/* --------------------------------------------- */
+/* Contenedor del login                          */
+/* --------------------------------------------- */
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6vh;              /* Ajusta qué tan abajo aparece */
+}
+
+/* --------------------------------------------- */
+/* Caja del login                                 */
+/* --------------------------------------------- */
+.login-box {
+    background: rgba(255, 255, 255, 0.8);   /* Ligero fondo blanco */
+    padding: 25px;
+    width: 85%;
+    max-width: 380px;                       /* Perfecto en PC */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+/* --------------------------------------------- */
+/* Título                                         */
+/* --------------------------------------------- */
+.login-box h2 {
+    margin: 0 0 18px;
+    font-size: 1.8rem;
+}
+
+/* --------------------------------------------- */
+/* Campos de texto                                */
+/* --------------------------------------------- */
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #666;
+    outline: none;
+}
+
+/* --------------------------------------------- */
+/* Botón                                          */
+/* --------------------------------------------- */
+#btnLogin {
+    width: 100%;
+    padding: 13px;
+    font-size: 1.2rem;
+    background: #044fa3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btnLogin:active {
+    scale: 0.97;
+}
+
+/* --------------------------------------------- */
+/* Mensaje error                                  */
+/* --------------------------------------------- */
+#error-msg {
+    color: red;
+    margin-top: 12px;
+    font-size: 0.9rem;
+}
+
+/* --------------------------------------------- */
+/* Ajustes específicos para CELULAR               */
+/* --------------------------------------------- */
+@media (max-width: 600px) {
+
+    .login-box {
+        padding: 20px;
+        width: 90%;
+        border-radius: 12px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-box input {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    #btnLogin {
+        padding: 14px;
+        font-size: 1.2rem;
+    }
+
+    .login-container {
+        margin-bottom: 5vh; /* Ajusta posición inferior */
+    }
+}

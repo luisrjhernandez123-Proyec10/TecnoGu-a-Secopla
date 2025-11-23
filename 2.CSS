@@ -1,0 +1,77 @@
+/* -------------------------------------------------- */
+/* FONDO DEL MENÚ                                      */
+/* -------------------------------------------------- */
+body.menu-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("fondo menu.jpg");
+    background-size: cover;          /* Ajusta perfectamente */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* -------------------------------------------------- */
+/* CONTENEDOR PRINCIPAL                                */
+/* -------------------------------------------------- */
+.menu-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------------------------- */
+/* CONTENEDOR DE BOTONES                               */
+/* -------------------------------------------------- */
+.menu-buttons {
+    width: 85%;
+    max-width: 420px;               /* Se ve bien tanto PC como celular */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* -------------------------------------------------- */
+/* BOTONES                                             */
+/* -------------------------------------------------- */
+.menu-buttons button {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.85);
+    color: #000;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.menu-buttons button:active {
+    scale: 0.97;
+}
+
+/* -------------------------------------------------- */
+/* AJUSTES ESPECÍFICOS PARA CELULAR                    */
+/* -------------------------------------------------- */
+@media (max-width: 600px) {
+
+    .menu-buttons {
+        width: 90%;
+        gap: 14px;
+    }
+
+    .menu-buttons button {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+}

@@ -129,7 +129,7 @@ body.menu-page {
 
 
 /* ===== AJUSTE SOLO PARA CELULARES ===== */
-@media (max-width: 480px) {
+@media (max-width: 240px) {
     body, html { width: 100%; overflow-x: hidden; }
     img { max-width: 100%; height: auto; }
     * { box-sizing: border-box; }
@@ -142,3 +142,4 @@ body.menu-page {
         display: block !important;
     }
 }
+

@@ -175,13 +175,14 @@ body.login-page {
 @media (max-width: 600px) {
     body.login-page {
         background-size: 100% auto;
-        padding-top: 260px;     /* 👈 Un poco más arriba en celular */
+        padding-top: 100px;     /* 👈 Un poco más arriba en celular */
     }
 
     .login-box {
         transform: none;
     }
 }
+
 
 
 

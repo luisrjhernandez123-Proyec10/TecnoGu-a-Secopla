@@ -127,20 +127,37 @@ body.menu-page {
 }
 
 
+/* ======= Ajustes SOLO para pantallas de celular ======= */
+@media (max-width: 480px) {
 
-/* ===== AJUSTE SOLO PARA CELULARES ===== */
-@media (max-width: 150px) {
-    body, html { width: 100%; overflow-x: hidden; }
-    img { max-width: 125%; height: auto; }
-    * { box-sizing: border-box; }
+    /* Contenedor principal del login */
+    .login-box {
+        width: 90%;          
+        left: 50%;           
+        transform: translateX(-50%);
+        top: 65%;            
+    }
 
-    button, .btn, .boton, .menu-btn {
-        position: relative !important;
-        transform: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: block !important;
+    /* Campos de texto */
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    /* Botón de ingresar */
+    .login-box button {
+        width: 60%;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* Texto de "Acceso" */
+    .login-box h2 {
+        font-size: 24px;
     }
 }
+
+
 
 

@@ -151,18 +151,18 @@ body.menu-page {
         margin-left: 0 !important; /* 👈 Esto es lo que arregla el desacomodo */
     }
 }
-/* --- FONDO DEL LOGIN OPTIMIZADO --- */
+/* --- FONDO DEL LOGIN EXACTO --- */
 body.login-page {
     height: 100vh;
-    background: url('inicio.jpg') no-repeat center top;
-    background-size: contain; /* 👈 Esto evita que se deforme */
+    background: url('inicio.jpg') no-repeat top center;
+    background-size: 100% auto;   /* 👈 Ajusta la imagen EXACTA en tamaño real */
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 40px; /* 👈 Antes eran 100px */
+    align-items: flex-start;      /* 👈 Para poder mover login justo debajo */
+    padding-top: 330px;           /* 👈 ALTURA IDEAL: queda debajo del logo SECOPLA */
 }
 
-/* Login box */
+/* Caja de login */
 .login-box {
     background: rgba(114, 115, 119, 0.85);
     padding: 20px;
@@ -171,19 +171,18 @@ body.login-page {
     max-width: 380px;
 }
 
-/* --- Ajuste para celulares --- */
+/* --- Ajuste especial para celulares --- */
 @media (max-width: 600px) {
     body.login-page {
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 20px; /* 👈 Todavía más arriba en celular */
-        background-size: contain;
-        background-position: top center;
+        background-size: 100% auto;
+        padding-top: 260px;     /* 👈 Un poco más arriba en celular */
     }
 
     .login-box {
-        transform: translateY(-20px); /* 👈 Lo subimos sin mover PC */
+        transform: none;
     }
 }
+
+
 
 

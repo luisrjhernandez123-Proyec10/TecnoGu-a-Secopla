@@ -151,3 +151,38 @@ body.menu-page {
         margin-left: 0 !important; /* 👈 Esto es lo que arregla el desacomodo */
     }
 }
+/* --- FONDO DEL LOGIN OPTIMIZADO --- */
+body.login-page {
+    height: 100vh;
+    background: url('inicio.jpg') no-repeat center top;
+    background-size: contain; /* 👈 Esto evita que se deforme */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px; /* 👈 Antes eran 100px */
+}
+
+/* Login box */
+.login-box {
+    background: rgba(114, 115, 119, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 380px;
+}
+
+/* --- Ajuste para celulares --- */
+@media (max-width: 600px) {
+    body.login-page {
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20px; /* 👈 Todavía más arriba en celular */
+        background-size: contain;
+        background-position: top center;
+    }
+
+    .login-box {
+        transform: translateY(-20px); /* 👈 Lo subimos sin mover PC */
+    }
+}
+

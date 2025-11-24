@@ -13,8 +13,24 @@
 
     <!-- BOTONES SUPERIORES -->
     <button id="btn-menu" class="btn-top" onclick="window.location.href='menu.html'">MENÚ</button>
-    <button id="btn-inicio" class="btn-top" onclick="window.location.href='index.html'">INICIO</button>
+    <button id="btn-inicio" class="btn-top" onclick='cerrarsesion'">INICIO</button>
     <button class="btn-trampa1" id="btn-tdt">HERRAMIENTAS</button>
+
+    <script>
+function cerrarSesion() {
+    // Borra cualquier sesión
+    sessionStorage.clear();
+
+    // Previene volver atrás
+    history.pushState(null, "", location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+
+    // Redirige a login
+    window.location.href = "index.html";
+}
+</script>
     <!-- ================= CUADROS DE TEXTO LIBREMENTE MOVIDOS ================= -->
     <div class="box" id="box1">Revisa que tus herramientas estén completas y en buen estado, dependiendo el tipo de servicio a realizar:</div>
     <div class="box" id="box2">	*Martillo. *Clavos. *Calafateadora. *Silicon. *Cebos. *Gomas. *Rotulador. *Brocha.</div>
@@ -27,5 +43,6 @@
 
 </body>
 </html>
+
 
 

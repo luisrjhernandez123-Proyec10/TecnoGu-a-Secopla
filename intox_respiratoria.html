@@ -13,24 +13,8 @@
 
     <!-- Botones superiores -->
     <button id="btn-menu" class="btn-top" onclick="location.href='menu.html'">MENÚ</button>
-    <button id="btn-inicio" class="btn-top" onclick="cerrarsesion'">INICIO</button>
+    <button id="btn-inicio" class="btn-top" onclick="location.href='index">INICIO</button>
     <button class="btn-trampa2" id="btn-tdt">INTOXICACION VIA RESPIRATORIA</button>
-
-    <script>
-function cerrarSesion() {
-    // Borra cualquier sesión
-    sessionStorage.clear();
-
-    // Previene volver atrás
-    history.pushState(null, "", location.href);
-    window.onpopstate = function () {
-        history.go(1);
-    };
-
-    // Redirige a login
-    window.location.href = "index.html";
-}
-</script>
 
     </div>
      <!-- ================= CUADROS DE TEXTO LIBREMENTE MOVIDOS ================= -->
@@ -44,6 +28,7 @@ function cerrarSesion() {
 
 </body>
 </html>
+
 
 
 

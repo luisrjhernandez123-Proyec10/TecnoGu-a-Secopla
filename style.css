@@ -130,7 +130,7 @@ body.menu-page {
 .menu-container {
     display: flex;
     flex-direction: column;
-    padding-top: 270px;
+    padding-top: 235px;
     padding-left: 30px;
 }
 
@@ -172,7 +172,7 @@ body.menu-page {
     }
 
     .menu-container {
-        padding-top: 140px; /* Ajuste para que la imagen no quede gigante */
+        padding-top: 100px; /* Ajuste para que la imagen no quede gigante */
         padding-left: 10px;
     }
 
@@ -182,6 +182,7 @@ body.menu-page {
         margin-left: 0 !important; /* Corrige el desacomodo */
     }
 }
+
 
 
 

@@ -137,7 +137,7 @@ body.menu-page {
 
 
 /* ajustar posiciones en celular */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     .login-box {
         padding: 20px;
@@ -190,6 +190,7 @@ body.menu-page {
      .btn-HERRAMIENTAS   { margin-left: 20px; }
      .btn-EPP            { margin-left: 30px; }
 }
+
 
 
 

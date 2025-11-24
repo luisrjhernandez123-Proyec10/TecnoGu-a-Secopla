@@ -85,19 +85,36 @@ body.login-page {
     color: red;
     margin-top: 10px;
 }
-
-/* Ajustes celulares login */
-@media (max-width: 800px) {
-    body.login-page {
-        padding-bottom: 20px;
-        background-size: contain;
-        background-position: top center;
-    }
+/* --------------------------------------------- */
+/* Ajustes específicos para CELULAR               */
+/* --------------------------------------------- */
+@media (max-width: 600px) {
 
     .login-box {
-        transform: translateY(-20px);
+        padding: 20px;
+        width: 90%;
+        border-radius: 12px;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-box input {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    #btnLogin {
+        padding: 14px;
+        font-size: 1.2rem;
+    }
+
+    .login-container {
+        margin-bottom: 5vh; /* Ajusta posición inferior */
     }
 }
+
 
 /* ----------------- MENÚ PRINCIPAL ----------------- */
 body.menu-page {
@@ -165,6 +182,7 @@ body.menu-page {
         margin-left: 0 !important; /* Corrige el desacomodo */
     }
 }
+
 
 
 

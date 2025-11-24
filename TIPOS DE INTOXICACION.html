@@ -27,18 +27,30 @@
     <div class="box" id="box3">LLAME AL SINTOX (SERVICO DE INFORMACIÓN TOXICOLOGICA) DE AMIFAC AL TEL. 55-5595-6659 ó 55-5611-2634 y 01800-009-2800 las 24 horas del día.</div>
 
 
-  /* Botones de intoxicación */
-  document.getElementById('btn-respiratoria').addEventListener('click', ()=>location.href='intox_respiratoria.html');
+ <script>
+  // Botones superiores
+  document.getElementById('btn-menu').addEventListener('click', ()=> location.href='menu.html');
+  document.getElementById('btn-inicio').addEventListener('click', ()=> location.href='index.html');
+  document.getElementById('btn-back').addEventListener('click', ()=> history.back());
 
-  document.getElementById('btn-oral').addEventListener('click', ()=>location.href='intox_oral.html');
+  // Botones de intoxicación
+  document.getElementById('btn-respiratoria').addEventListener('click', ()=>location.href='intox_respiratoria.html'
+  );
 
-  document.getElementById('btn-dermica').addEventListener('click', ()=>location.href='intox_dermica.html');
+  document.getElementById('btn-oral').addEventListener('click', ()=>location.href='intox_oral.html'
+  );
 
-  document.getElementById('btn-ocular').addEventListener('click', ()=>location.href='intox_ocular.html');
+  document.getElementById('btn-dermica').addEventListener('click', ()=>location.href='intox_dermica.html'
+  );
+
+  document.getElementById('btn-ocular').addEventListener('click', ()=> 
+    location.href='intox_ocular.html'
+  );
 </script>
-
+</div>
 </body>
 </html>
+
 
 
 

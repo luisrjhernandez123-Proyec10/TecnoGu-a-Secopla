@@ -13,8 +13,24 @@
 
     <!-- BOTONES SUPERIORES -->
     <button id="btn-menu" class="btn-top" onclick="location.href='menu.html'">MENÚ</button>
-    <button id="btn-inicio" class="btn-top" onclick="location.href='index.html'">INICIO</button>
+    <button id="btn-inicio" class="btn-top" onclick='cerrarsesion'">INICIO</button>
     <button class="btn-trampa1" id="btn-tdt">REPORTES EN LA APP</button>
+
+    <script>
+function cerrarSesion() {
+    // Borra cualquier sesión
+    sessionStorage.clear();
+
+    // Previene volver atrás
+    history.pushState(null, "", location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+
+    // Redirige a login
+    window.location.href = "index.html";
+}
+</script>
 
     <!-- BOTONES DE REPORTES -->
     <button id="btn-rnp" class="btn-reporte" onclick="location.href='reporte_rnp.html'">REPORTE RNP</button>
@@ -22,5 +38,6 @@
 
 </body>
 </html>
+
 
 

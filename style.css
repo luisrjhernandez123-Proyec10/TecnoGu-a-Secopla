@@ -111,7 +111,7 @@ body.login-page {
     }
 
     .login-container {
-        margin-bottom: -30vh; /* Ajusta posición inferior */
+        margin-bottom: 10px; /* Ajusta posición inferior */
     }
 }
 

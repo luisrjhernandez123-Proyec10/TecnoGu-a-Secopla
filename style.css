@@ -88,7 +88,7 @@ body.login-page {
 /* --------------------------------------------- */
 /* Ajustes específicos para CELULAR               */
 /* --------------------------------------------- */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .login-box {
         padding: 20px;
@@ -111,7 +111,7 @@ body.login-page {
     }
 
     .login-container {
-        margin-bottom: 5vh; /* Ajusta posición inferior */
+        margin-bottom: 10vh; /* Ajusta posición inferior */
     }
 }
 
@@ -182,6 +182,7 @@ body.menu-page {
         margin-left: 0 !important; /* Corrige el desacomodo */
     }
 }
+
 
 
 

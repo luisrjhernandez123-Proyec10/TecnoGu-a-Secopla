@@ -16,8 +16,12 @@
     <button id="btn-inicio" class="btn-top" onclick='cerrarsesion'">INICIO</button>
     <button class="btn-trampa1" id="btn-tdt">REPORTES EN LA APP</button>
 
-    <script>
-function cerrarSesion() {
+    <!-- BOTONES DE REPORTES -->
+    <button id="btn-rnp" class="btn-reporte" onclick="location.href='reporte_rnp.html'">REPORTE RNP</button>
+    <button id="btn-edc" class="btn-reporte" onclick="location.href='reporte_edc.html'">REPORTE EDC</button>
+
+     <script>
+ function cerrarSesion() {
     // Borra cualquier sesión
     sessionStorage.clear();
 
@@ -31,13 +35,9 @@ function cerrarSesion() {
     window.location.href = "index.html";
 }
 </script>
-
-    <!-- BOTONES DE REPORTES -->
-    <button id="btn-rnp" class="btn-reporte" onclick="location.href='reporte_rnp.html'">REPORTE RNP</button>
-    <button id="btn-edc" class="btn-reporte" onclick="location.href='reporte_edc.html'">REPORTE EDC</button>
-
 </body>
 </html>
+
 
 
 

@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="1.CSS">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Inicio de Sesión</title>
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* CONTENEDOR PRINCIPAL */
+  .login-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("inicio.jpg"); /* NOMBRE SEGÚN TUS IMÁGENES */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    overflow: hidden;
+  }
+
+  /* CAJA DE LOGIN */
+  .login-box {
+    position: absolute;
+    top: 650px;     /* ← AJUSTA ESTO AL GUSTO */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 350px;
+    background: rgba(0,0,0,0.65);
+    padding: 25px;
+    border-radius: 12px;
+    border: 3px solid yellow;
+    text-align: center;
+  }
+
+  .login-box h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid yellow;
+    background: rgba(255,255,255,0.8);
+    font-size: 16px;
+  }
+
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: black;
+    color: yellow;
+    border: 3px solid yellow;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .login-box p {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* AJUSTES RESPONSIVOS */
+  @media (max-width: 600px) {
+    .login-box {
+      top: 500px;   /* AJUSTA SEGÚN TU CELULAR */
+      width: 90%;
+    }
+  }
+
+</style>
+
 </head>
-<body class="login-page">
+<body>
+  
   <div class="login-container">
+
     <div class="login-box">
       <h2>Acceso</h2>
       <input type="text" id="usuario" placeholder="Usuario">
@@ -15,13 +97,26 @@
       <button id="btnLogin">Ingresar</button>
       <p id="error-msg"></p>
     </div>
+
   </div>
 
-  <!-- Importante: el nombre debe coincidir con el archivo JS -->
-  <script src="script.js"></script>
+<script>
+  document.getElementById("btnLogin").onclick = function() {
+
+    let user = document.getElementById("usuario").value;
+    let pass = document.getElementById("contrasena").value;
+
+    if ((user === "luishdez12" && pass === "12345") ||
+        (user === "efrain1" && pass === "54321")) {
+
+      window.location.href = "menu.html";
+
+    } else {
+      document.getElementById("error-msg").textContent =
+        "Usuario o contraseña incorrectos";
+    }
+  }
+</script>
+
 </body>
 </html>
-
-
-
-

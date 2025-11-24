@@ -16,22 +16,6 @@
     <button id="btn-inicio" class="btn-top" onclick='cerrarsesion'()">INICIO</button>
     <button class="btn-trampa1" id="btn-tdt">EPP</button>
 
- <script>
- function cerrarSesion() {
-    // Borra cualquier sesión
-    sessionStorage.clear();
-
-    // Previene volver atrás
-    history.pushState(null, "", location.href);
-    window.onpopstate = function () {
-        history.go(1);
-    };
-
-    // Redirige a login
-    window.location.href = "index.html";
-}
-</script>
-
 
     <!-- ================= CUADROS DE TEXTO ================= -->
     <div class="box" id="box1">Verifica que tu EPP (Equipo de Protección Personal) esté completo y en buen estado, según el tipo de servicio a realizar:</div>
@@ -48,8 +32,25 @@
                                *Casco
 </div>
 
+
+  <script>
+ function cerrarSesion() {
+    // Borra cualquier sesión
+    sessionStorage.clear();
+
+    // Previene volver atrás
+    history.pushState(null, "", location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+
+    // Redirige a login
+    window.location.href = "index.html";
+}
+</script>
 </body>
 </html>
+
 
 
 

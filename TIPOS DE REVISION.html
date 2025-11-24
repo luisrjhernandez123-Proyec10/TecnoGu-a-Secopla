@@ -100,30 +100,14 @@
 
 <script>
   document.getElementById('btn-menu').onclick = () => location.href='menu.html';
-  document.getElementById('btn-inicio').onclick = () => cerrarsesion.href='cerrarsesion';
-
-  <script>
-function cerrarSesion() {
-    // Borra cualquier sesión
-    sessionStorage.clear();
-
-    // Previene volver atrás
-    history.pushState(null, "", location.href);
-    window.onpopstate = function () {
-        history.go(1);
-    };
-
-    // Redirige a login
-    window.location.href = "index.html";
-}
-</script>
-
+  document.getElementById('btn-inicio').onclick = () => location.href='index.html';
   document.getElementById('btn-edc').onclick  = () => location.href='revision_edc.html';
   document.getElementById('btn-lln').onclick  = () => location.href='revision_lln.html';
   document.getElementById('btn-edcm').onclick = () => location.href='revision_edcm.html';
 </script>
 </body>
 </html>
+
 
 
 

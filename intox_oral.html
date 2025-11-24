@@ -10,25 +10,8 @@
 
     <button class="btn-flecha" onclick="history.back()">⟵</button>
     <button id="btn-menu" class="btn-top" onclick="location.href='menu.html'">MENÚ</button>
-    <button id="btn-inicio" class="btn-top" onclick="cerrarsesion'">INICIO</button>
+    <button id="btn-inicio" class="btn-top" onclick="location.href='index.thml">INICIO</button>
     <button class="btn-trampa3" id="btn-tdt">INTOXICACION VIA ORAL</button>
-
-    <script>
-function cerrarSesion() {
-    // Borra cualquier sesión
-    sessionStorage.clear();
-
-    // Previene volver atrás
-    history.pushState(null, "", location.href);
-    window.onpopstate = function () {
-        history.go(1);
-    };
-
-    // Redirige a login
-    window.location.href = "index.html";
-}
-</script>
-
 
      </div>
      <!-- ================= CUADROS DE TEXTO LIBREMENTE MOVIDOS ================= -->
@@ -40,6 +23,7 @@ function cerrarSesion() {
 
 </body>
 </html>
+
 
 
 

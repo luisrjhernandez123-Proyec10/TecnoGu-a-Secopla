@@ -1,13 +1,11 @@
-/* -------------------------------------------------- */
-/* FONDO DEL MENÚ                                      */
-/* -------------------------------------------------- */
+FONDO DEL MENÚ          
 body.menu-page {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
 
-    background-image: url("Fondo menu.PGN");
+    background-image: url("Fondo menu.jpg");
     background-size: cover;          /* Ajusta perfectamente */
     background-position: center;
     background-repeat: no-repeat;

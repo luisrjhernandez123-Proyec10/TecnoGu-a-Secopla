@@ -30,8 +30,24 @@
 <script>
   // Botones superiores
   document.getElementById('btn-menu').addEventListener('click', ()=> location.href='menu.html');
-  document.getElementById('btn-inicio').addEventListener('click', ()=> location.href='index.html');
+  document.getElementById('btn-inicio').addEventListener('click', ()=> location.href='cerrarsesion');
   document.getElementById('btn-back').addEventListener('click', ()=> history.back());
+
+  <script>
+function cerrarSesion() {
+    // Borra cualquier sesión
+    sessionStorage.clear();
+
+    // Previene volver atrás
+    history.pushState(null, "", location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+
+    // Redirige a login
+    window.location.href = "index.html";
+}
+</script>
 
   // Botones de intoxicación
   document.getElementById('btn-respiratoria').addEventListener('click', ()=>location.href='intox_respiratoria.html'
@@ -50,6 +66,7 @@
 
 </body>
 </html>
+
 
 
 

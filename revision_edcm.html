@@ -31,27 +31,12 @@
 
 <script>
   document.getElementById('btn-menu').onclick = () => location.href='menu.html';
-  document.getElementById('btn-inicio').onclick = () => cerrarsesion';
-
-    <script>
-function cerrarSesion() {
-    // Borra cualquier sesión
-    sessionStorage.clear();
-
-    // Previene volver atrás
-    history.pushState(null, "", location.href);
-    window.onpopstate = function () {
-        history.go(1);
-    };
-
-    // Redirige a login
-    window.location.href = "index.html";
-}
-</script>
+  document.getElementById('btn-inicio').onclick = () => location.href='index.html';
 </script>
 
 </body>
 </html>
+
 
 
 

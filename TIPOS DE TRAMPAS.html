@@ -13,23 +13,7 @@
 
     <!-- Botones superiores -->
     <button id="btn-menu" class="btn-top" onclick="location.href='menu.html'">MENÚ</button>
-    <button id="btn-inicio" class="btn-top" onclick='cerrar sesion'">INICIO</button>
-
-    <script>
-function cerrarSesion() {
-    // Borra cualquier sesión
-    sessionStorage.clear();
-
-    // Previene volver atrás
-    history.pushState(null, "", location.href);
-    window.onpopstate = function () {
-        history.go(1);
-    };
-
-    // Redirige a login
-    window.location.href = "index.html";
-}
-</script>
+    <button id="btn-inicio" class="btn-top" onclick="location.href='index.html">INICIO</button>
 
     <!-- Botones de trampas -->
     <button class="btn-trampa" id="btn-edc">TRAMPAS EDC</button>
@@ -40,6 +24,7 @@ function cerrarSesion() {
 
 </body>
 </html>
+
 
 
 

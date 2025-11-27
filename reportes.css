@@ -103,8 +103,8 @@ img {
     font-weight: bold;
 }
 
-#btn-menu { left: 600px; }
-#btn-inicio { left: 1180px; }
+#btn-menu { left: 60px; }
+#btn-inicio { left: 80px; }
 
 /* =========================================
    BOTONES DE REPORTES EN APP
@@ -125,8 +125,8 @@ img {
     transform: translateX(-50%);
 }
 
-#btn-rnp { top: 420px; margin-left: -250px; }
-#btn-edc { top: 420px; margin-left: 250px; }
+#btn-rnp { top: 420px; margin-left: 25px; }
+#btn-edc { top: 420px; margin-left: 50px; }
 
 #box1 {
     position: absolute;

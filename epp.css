@@ -106,7 +106,7 @@ body {
 #box3 {
     position: absolute;
     top: 390px;
-    left: 150px;
+    left: 50px;
     width: 270px;             /* Otro horizontal */
     height: 100px;
     background: transparent;
@@ -121,7 +121,7 @@ body {
 }
 .btn-trampa1 {
     position: absolute;
-    left: 250%;
+    left: 50%;
     width: 100px;
     transform: translateX(-50%);
     padding: 14px;

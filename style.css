@@ -127,12 +127,12 @@ body.menu-page {
 }
 
 /* Distancias personalizadas */
-.btn-REVISION       { margin-left: 300px; }
-.btn-INTOXICACION   { margin-left: 200px; }
-.btn-TRAMPAS        { margin-left: 100px; }
-.btn-REPORTES       { margin-left: 100px; }
-.btn-HERRAMIENTAS   { margin-left: 200px; }
-.btn-EPP            { margin-left: 300px; }
+.btn-REVISION       { margin-left: 30px; }
+.btn-INTOXICACION   { margin-left: 20px; }
+.btn-TRAMPAS        { margin-left: 10px; }
+.btn-REPORTES       { margin-left: 10px; }
+.btn-HERRAMIENTAS   { margin-left: 20px; }
+.btn-EPP            { margin-left: 30px; }
 
 
 

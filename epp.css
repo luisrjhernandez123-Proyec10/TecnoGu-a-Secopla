@@ -65,8 +65,8 @@ body {
     font-weight: bold;
 }
 
-#btn-menu { left: 600px; }
-#btn-inicio { left: 1180px; }
+#btn-menu { left: 60px; }
+#btn-inicio { left: 80px; }
 
 /* CUADROS DE TEXTO INDIVIDUALES */
 #box1 {
@@ -79,7 +79,7 @@ body {
     border: none;
     border-radius: 12px;
     padding: 16px 14px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     box-sizing: border-box;
     text-align: center;
@@ -96,7 +96,7 @@ body {
     border: none;
     border-radius: 12px;
     padding: 16px 14px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     box-sizing: border-box;
     text-align: center;
@@ -113,7 +113,7 @@ body {
     border: none;
     border-radius: 12px;
     padding: 16px 14px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     box-sizing: border-box;
     text-align: center;
@@ -134,5 +134,5 @@ body {
     cursor: pointer;
 }
 
-    #btn-tdt        { top: 260px; }
-    #btn-tdt         { margin-left: -605px; } 
+    #btn-tdt        { top: 60px; }
+    #btn-tdt         { margin-left: 5px; } 

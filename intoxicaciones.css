@@ -1,0 +1,612 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 390px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ======================================================
+   FONDO GENERAL PARA TIPOS DE INTOXICACIÓN
+====================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("TIPOS DE INTOXICACION.JPG");
+    background-size: 100% 100%;    /* Ajuste perfecto */
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ======================================================
+   BOTÓN FLECHA (REGRESAR)
+====================================================== */
+.btn-flecha {
+    height:80px;
+
+    position: absolute;
+    top: 208px;
+    left: 20px;
+    background: black;
+    color: yellow;
+    border: 4px solid yellow;
+    padding: 4px 12px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* ======================================================
+   BOTONES SUPERIORES (MENÚ / INICIO)
+====================================================== */
+.btn-top {
+    height:80px;
+    position: absolute;
+    top: 208px;
+    background: black;
+    color: white;
+    border: 3px solid yellow;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-menu   { left: 600px; }
+#btn-inicio { left: 1180px; }
+
+
+/* ======================================================
+   BOTONES DE TIPOS DE INTOXICACIÓN
+====================================================== */
+.btn-intox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    padding: 16px;
+    background: #007bff;
+    border: 3px solid black;
+    color: black;
+    font-size: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ALTURA IGUAL PARA TODOS (ya como tú lo tenías) */
+#btn-respiratoria { top: 450px; }
+#btn-oral         { top: 450px; }
+#btn-dermica      { top: 450px; }
+#btn-ocular       { top: 450px; }
+
+/* POSICIONES LATERALES PERSONALIZADAS (también como tú lo tenías) */
+#btn-respiratoria { margin-left: -450px; }  
+#btn-oral         { margin-left: -150px; }  
+#btn-dermica      { margin-left: 150px; }  
+#btn-ocular       { margin-left: 450px; }  
+
+
+/* ======================================================
+   CONTENEDOR DE TEXTO PARA CADA PÁGINA DE INTOXICACIÓN
+====================================================== */
+
+
+/* ======================================================
+   FONDO PARA LAS PÁGINAS INTERNAS (RESPIRATORIA, ORAL, ETC.)
+====================================================== */
+.fondo-intox {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ======= FONDOS PARA CADA TIPO DE INTOXICACIÓN ======= */
+
+.body-respiratoria {
+    background-image: url("INTOXICACION RESPIRATORIA.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.body-oral {
+    background-image: url("INTOXICACION ORAL.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.body-dermica {
+    background-image: url("INTOXICACION DERMICA.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.body-ocular {
+    background-image: url("INTOXICACION OCULAR.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* CUADROS DE TEXTO INDIVIDUALES */
+#box1 {
+    position: absolute;
+    top: 250px;
+    left: 330px;
+    width: 1000px;            /* Cambia el ancho aquí */
+    height: 100px;            /* Cambia la altura aquí */
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box2 {
+    position: absolute;
+    top: 360px;
+    left: 225px;
+    width: 900px;             /* Más estrecho para texto vertical */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box3 {
+    position: absolute;
+    top: 530px;
+    left: 170px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box4 {
+    position: absolute;
+    top: 252px;
+    left: 350px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box5 {
+    position: absolute;
+    top: 350px;
+    left: 10px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box6 {
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box7 {
+    position: absolute;
+    top: 450px;
+    left: 45px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box8 {
+    position: absolute;
+    top: 500px;
+    left: 85px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box9 {
+    position: absolute;
+    top: 252px;
+    left: 350px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box10 {
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    width: 775px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box11{
+    position: absolute;
+    top: 410px;
+    left: 5px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box12 {
+    position: absolute;
+    top: 460px;
+    left: -75px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}#box13 {
+    position: absolute;
+    top: 510px;
+    left: 20px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box14 {
+    position: absolute;
+    top: 252px;
+    left: 350px;
+    width: 1000px;            /* Cambia el ancho aquí */
+    height: 100px;            /* Cambia la altura aquí */
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box15 {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: 900px;             /* Más estrecho para texto vertical */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box16 {
+    position: absolute;
+    top: 420px;
+    left: -160px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+#box17 {
+    position: absolute;
+    top: 470px;
+    left: -273px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box18 {
+    position: absolute;
+    top: 520px;
+    left: -13px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box19 {
+    position: absolute;
+    top: 252px;
+    left: 350px;
+    width: 1000px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box20 {
+    position: absolute;
+    top: 350px;
+    left: 65px;
+    width: 800px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box21 {
+    position: absolute;
+    top: 400px;
+    left: 62px;
+    width: 900px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box22 {
+    position: absolute;
+    top: 450px;
+    left: 52px;
+    width: 900px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+#box23 {
+    position: absolute;
+    top: 500px;
+    left: 72px;
+    width: 800px;             /* Otro horizontal */
+    height: 100px;
+    background: transparent;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+.btn-trampa1 {
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-35%);
+    padding: 14px;
+    background: #a647d3bd;
+    border: 3px solid rgba(182, 53, 53, 0.637);
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 265px; }
+    #btn-tdt         { margin-left: 50px; } 
+
+.btn-trampa2 {
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-25%);
+    padding: 14px;
+    background: #a647d3bd;
+    border: 3px solid rgba(182, 53, 53, 0.637);
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 265px; }
+    #btn-tdt         { margin-left: -550px; } 
+
+.btn-trampa3 {
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-25%);
+    padding: 14px;
+    background: #a647d3bd;
+    border: 3px solid rgba(182, 53, 53, 0.637);
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 257px; }
+    #btn-tdt         { margin-left: -550px; } 
+
+.btn-trampa4 {
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-25%);
+    padding: 14px;
+    background: #a647d3bd;
+    border: 3px solid rgba(182, 53, 53, 0.637);
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 257px; }
+    #btn-tdt         { margin-left: -550px; } 
+
+.btn-trampa5 {
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-25%);
+    padding: 14px;
+    background: #a647d3bd;
+    border: 3px solid rgba(182, 53, 53, 0.637);
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #btn-tdt        { top: 257px; }
+    #btn-tdt         { margin-left: -550px; } 

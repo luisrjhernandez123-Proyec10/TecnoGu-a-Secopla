@@ -1,4 +1,4 @@
-// Manejo de inicio de sesión, protección de páginas y cierre de sesión
+// Manejo de inicio de sesión, protección de páginas y cierre de sesión (versión móvil)
 (function() {
     // ----- LOGIN -----
     const btnLogin = document.getElementById('btnLogin');

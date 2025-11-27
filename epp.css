@@ -7,12 +7,6 @@ body {
     align-items: flex-start;
 }
 
-.container {
-    width: 390px;
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
-}
 
 img {
     max-width: 100%;
@@ -133,15 +127,84 @@ body {
 
     #btn-tdt        { top: 260px; }
     #btn-tdt         { margin-left: -605px; } 
-/* Escalado automático para pantallas más angostas que el diseño (390px) */
-@media (max-width: 390px) {
-    body {
-        overflow-x: hidden;
-        align-items: flex-start;
-    }
+/* ============================================================
+   MODO MÓVIL — DISEÑO BASE 390px
+   - La app está pensada solo para teléfonos en vertical.
+   - Todo el contenido se dibuja en un "lienzo" de 390px de ancho
+     y se escala automáticamente para ajustarse al ancho de la pantalla.
+   - Si quieres cambiar tamaños de botones, texto o imágenes,
+     usa las secciones de OPCIONES que están más abajo.
+============================================================ */
+body {
+    /* Fondo negro fuera del área de diseño, por si sobra espacio */
+    background-color: #000;
+}
+
+/* Contenedor principal de TODAS las pantallas */
+.container {
+    width: 390px;                 /* ANCHO ORIGINAL DEL DISEÑO */
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Escalado automático para pantallas más angostas o más anchas
+   que 390px (teléfonos pequeños o grandes, siempre en vertical) */
+@media (orientation: portrait) {
     .container {
-        width: 390px;
         transform-origin: top left;
         transform: scale(calc(100vw / 390));
     }
 }
+
+/* Si abres en una laptop (horizontal) se verá como un móvil al centro */
+@media (orientation: landscape) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+/* ================= OPCIONES DE AJUSTE RÁPIDO =================
+   Descomenta (quita los "/*" y "*/") lo que necesites cambiar.
+================================================================ */
+
+/* 1) Reducir tamaño general de los botones
+button, .btn-top, .btn-reporte, .btn-revision, .btn-trampa, .btn-section {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+}
+*/
+
+/* 2) Aumentar tamaño general de los botones
+button, .btn-top, .btn-reporte, .btn-revision, .btn-trampa, .btn-section {
+    font-size: 1.1rem;
+    padding: 12px 18px;
+}
+*/
+
+/* 3) Reducir tamaño de texto principal (párrafos, cuadros de texto)
+body, p, .texto, .box-texto {
+    font-size: 0.85rem;
+}
+*/
+
+/* 4) Aumentar tamaño de texto principal
+body, p, .texto, .box-texto {
+    font-size: 1.1rem;
+}
+*/
+
+/* 5) Ajustar tamaño de imágenes internas (las que NO son fondo)
+img {
+    max-width: 90%;   /* ocupar menos ancho dentro del diseño */
+    height: auto;
+}
+*/
+
+/* Si NO quieres que las imágenes se toquen, puedes usar:
+img {
+    max-width: 80%;
+}
+*/

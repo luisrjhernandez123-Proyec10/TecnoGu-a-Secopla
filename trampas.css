@@ -35,13 +35,13 @@ body {
     height:80px;
 
     position: absolute;
-    top: 208px;
+    top: 212px;
     left: 20px;
     background: black;
     color: yellow;
     border: 4px solid yellow;
     padding: 4px 12px;
-    font-size: 20px;
+    font-size: 10px;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
@@ -51,19 +51,19 @@ body {
 .btn-top {
     height:80px;
     position: absolute;
-    top: 208px;
+    top: 220px;
     background: black;
     color: white;
     border: 3px solid yellow;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 10px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
 }
 
-#btn-menu { left: 60px; }
-#btn-inicio { left: 80px; }
+#btn-menu { left: 70px; }
+#btn-inicio { left: 120px; }
 
 /* Botones de trampas */
 .btn-trampa {
@@ -75,22 +75,22 @@ body {
     background: #5cb359;
     border: 3px solid rgba(68, 67, 67, 0.637);
     color: black;
-    font-size: 20px;
+    font-size: 10px;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
 }
 
 /* Posiciones verticales */
-#btn-edc        { top: 35px; }
-#btn-feromonas  { top: 35px; }
-#btn-edcm       { top: 35px; }
-#btn-lln        { top: 35px; }
+#btn-edc        { top: 350px; }
+#btn-feromonas  { top: 360px; }
+#btn-edcm       { top: 370px; }
+#btn-lln        { top: 380px; }
 /* POSICIONES LATERALES PERSONALIZADAS (también como tú lo tenías) */
-#btn-edc         { margin-left: 50px;}  
-#btn-feromonas   { margin-left: 21px;}  
-#btn-edcm        { margin-left: 80px; }  
-#btn-lln         { margin-left: 38px; }  
+#btn-edc         { margin-left: 20px;}  
+#btn-feromonas   { margin-left: 40px;}  
+#btn-edcm        { margin-left: 60px; }  
+#btn-lln         { margin-left: 80px; }  
 
 .btn-trampa1 {
     position: absolute;

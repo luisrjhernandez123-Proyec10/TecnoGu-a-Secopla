@@ -1,3 +1,24 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 390px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Fondo general */
 body {
     margin: 0;
@@ -85,18 +106,3 @@ body {
 
     #btn-tdt        { top: 260px; }
     #btn-tdt         { margin-left: -550px; } 
-
-/* ===== AJUSTE SOLO PARA CELULARES ===== */
-@media (max-width: 768px) {
-    body, html { width: 100%; overflow-x: hidden; }
-    img { max-width: 100%; height: auto; }
-    * { box-sizing: border-box; }
-
-    button, .btn, .boton, .menu-btn {
-        position: relative !important;
-        transform: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: block !important;
-    }
-}

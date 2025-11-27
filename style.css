@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -7,10 +8,12 @@ body {
 }
 
 .container {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    margin: 0 auto;
 }
 
 img {
@@ -84,7 +87,7 @@ body.login-page {
 /* ----------------- MENÚ PRINCIPAL ----------------- */
 body.menu-page {
     height: 100vh;
-    background: url('Fondo menu.jpg') no-repeat center center fixed;
+    background: url('menu.jpg') no-repeat center center fixed;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -137,7 +140,7 @@ body.menu-page {
 
 
 /* ajustar posiciones en celular */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .login-box {
         padding: 20px;
@@ -164,7 +167,7 @@ body.menu-page {
     }
 }
 
-/* ----------------- RESPONSIVE del menu ----------------- */
+/* ----------------- RESPONSIVE del m ----------------- */
 @media (max-width: 600px) {
 
     body.menu-page {
@@ -190,41 +193,28 @@ body.menu-page {
      .btn-HERRAMIENTAS   { margin-left: 20px; }
      .btn-EPP            { margin-left: 30px; }
 }
+/* Ajustes globales para que se vea bien en distintas pantallas */
+* {
+    box-sizing: border-box;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Ajuste general en pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
+    .login-box {
+        width: 90%;
+        max-width: 340px;
+    }
+    .menu-buttons button {
+        width: 90%;
+        font-size: 16px;
+        margin-left: 0 !important;
+    }
+}

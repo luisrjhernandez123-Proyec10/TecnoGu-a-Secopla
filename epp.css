@@ -78,8 +78,8 @@ body {
     background: transparent;
     border: none;
     border-radius: 12px;
-    padding: 10px 14px;
-    font-size: 6px;
+    padding: 6px 12px;
+    font-size: 4px;
     font-weight: bold;
     box-sizing: border-box;
     text-align: center;
@@ -135,4 +135,4 @@ body {
 }
 
     #btn-tdt        { top: 320px; }
-    #btn-tdt         { margin-left: 250px; } 
+    #btn-tdt         { margin-left: 50px; } 

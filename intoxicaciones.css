@@ -71,8 +71,8 @@ body {
     font-weight: bold;
 }
 
-#btn-menu   { left: 600px; }
-#btn-inicio { left: 1180px; }
+#btn-menu   { left: 40px; }
+#btn-inicio { left: 80px; }
 
 
 /* ======================================================
@@ -152,13 +152,13 @@ body {
     position: absolute;
     top: 250px;
     left: 330px;
-    width: 1000px;            /* Cambia el ancho aquí */
+    width: 500px;            /* Cambia el ancho aquí */
     height: 100px;            /* Cambia la altura aquí */
     background: transparent;
     border: none;
     border-radius: 12px;
     padding: 16px 14px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     box-sizing: border-box;
     text-align: center;
@@ -169,13 +169,13 @@ body {
     position: absolute;
     top: 360px;
     left: 225px;
-    width: 900px;             /* Más estrecho para texto vertical */
+    width: 500px;             /* Más estrecho para texto vertical */
     height: 100px;
     background: transparent;
     border: none;
     border-radius: 12px;
     padding: 16px 14px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     box-sizing: border-box;
     text-align: center;

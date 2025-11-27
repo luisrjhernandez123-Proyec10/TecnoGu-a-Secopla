@@ -86,10 +86,9 @@ body.login-page {
 body.menu-page {
     height: 100vh;
     background: url('Fondo menu.jpg') no-repeat center center fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     bankground-repeat: no-repeat;
     bankground-position: center;
-    fron-family: arial, sans-serif;
 }
 
 .menu-container {

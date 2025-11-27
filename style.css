@@ -83,12 +83,15 @@ body.login-page {
 }
 
 /* ----------------- MENÚ PRINCIPAL ----------------- */
-body.menu-page {
+body,menu-page {
+    margin: 0;
+    padding: 0;
     height: 100vh;
-    background: url('Fondo menu.jpg') no-repeat center center fixed;
-    background-size: cover;
-    bankground-repeat: no-repeat;
-    bankground-position: center;
+    background-image: url("Fondo menu.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
 }
 
 .menu-container {

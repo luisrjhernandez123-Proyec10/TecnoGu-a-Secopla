@@ -3,7 +3,7 @@
    Diseño base: 390 px
 ============================================================ */
 :root {
-    --franja-h: 220px;      /* altura ajustable */
+    --franja-h: 110px;      /* altura ajustable */
     --btnH: 80px;           /* altura de botones estilo A */
 }
 

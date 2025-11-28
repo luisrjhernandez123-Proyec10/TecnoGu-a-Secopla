@@ -1,39 +1,65 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPP</title>
-    <link rel="stylesheet" href="epp.css">
+    <link rel="stylesheet" href="EPP.css">
 </head>
 <body>
-<div class=\"container\">
 
-    <!-- BOTÓN FLECHA -->
-    <button class="btn-flecha" onclick="history.back()">⟵</button>
+    <!-- LOGO SUPERIOR -->
+    <img src="LOGO APP.jpg" class="logo-app">
 
-    <!-- BOTONES SUPERIORES -->
-    <button id="btn-menu" class="btn-top" onclick="window.location.href='menu.html'">MENÚ</button>
-    <button id="btn-inicio" class="btn-top" onclick="window.location.href='index.html'">INICIO</button>
-    <button class="btn-trampa1" id="btn-tdt">EPP</button>
+    <!-- FRANJA VERDE -->
+    <div class="header-band">
+        <button onclick="history.back()">←</button>
+        <button onclick="location.href='menu.html'">MENÚ</button>
+        <button onclick="location.href='index.html'">INICIO</button>
+    </div>
 
+    <!-- TÍTULO -->
+    <h2 class="titulo">EQUIPO DE PROTECCIÓN PERSONAL</h2>
 
-    <!-- ================= CUADROS DE TEXTO ================= -->
-    <div class="box" id="box1">Verifica que tu EPP (Equipo de Protección Personal) esté completo y en buen estado, según el tipo de servicio a realizar:</div>
-    <div class="box" id="box2">*Guantes hi flex
-                               *Cubre bocas.
-                               *Pantalón mezclilla.
-                               *Chaleco.
-                               *Mascarilla 3M.
-</div>
-    <div class="box" id="box3">*Lentes de seguridad.
-                               *Playera de manga larga.
-                               *Zapatos de seguridad.
-                               *Traje tyvek.
-                               *Casco
-</div>
+    <!-- PRIMERA FILA DE ICONOS -->
+    <div class="fila-iconos">
+        <img src="EPP 1.jpg">
+    </div>
 
-</div>
+    <!-- SEGUNDA FILA DE ICONOS -->
+    <div class="fila-iconos">
+        <img src="EPP 2.jpg">
+    </div>
+
+    <!-- CONTENEDOR LISTAS + PERSONA -->
+    <div class="contenedor-listas">
+
+        <div class="listas">
+
+            <!-- LISTA 1 -->
+            <ul class="lista">
+                <li>Guantes hi flex</li>
+                <li>Cubre bocas</li>
+                <li>Pantalón mezclilla</li>
+                <li>Chaleco</li>
+                <li>Mascarilla 3M</li>
+            </ul>
+
+            <!-- LISTA 2 -->
+            <ul class="lista">
+                <li>Lentes de seguridad</li>
+                <li>Playera manga larga</li>
+                <li>Zapatos de seguridad</li>
+                <li>Traje Tyvek</li>
+                <li>Casco</li>
+            </ul>
+
+        </div>
+
+        <!-- PERSONA -->
+        <img src="Persona EPP.jpg" class="persona-img">
+
+    </div>
+
 </body>
 </html>

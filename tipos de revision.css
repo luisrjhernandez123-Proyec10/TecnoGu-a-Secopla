@@ -1,0 +1,75 @@
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* ▬▬▬▬▬▬▬▬▬ IMAGEN SUPERIOR (LOGO APP) ▬▬▬▬▬▬▬▬▬ */
+.header-logo img {
+    width: 100%;
+    max-width: 440px; /* límite para que no se deforme */
+    display: block;
+    margin: 0 auto;
+}
+
+/* ▬▬▬▬▬▬▬▬▬ FRANJA VERDE AJUSTABLE ▬▬▬▬▬▬▬▬▬ */
+:root { 
+    --franja-h: 80px;   /* ← puedes subir / bajar esta altura */
+}
+
+.header-band {
+    width: 100%;
+    height: var(--franja-h);
+    background: #00A651;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+/* Botones superiores */
+.top-btn {
+    background: black;
+    color: white;
+    border: 3px solid yellow;
+    border-radius: 12px;
+    font-size: 18px;
+    padding: 12px 22px;
+    font-weight: bold;
+}
+
+/* ▬▬▬▬▬▬▬▬▬ IMAGEN CENTRAL (MUÑECO) ▬▬▬▬▬▬▬▬▬ */
+.hero-img img {
+    width: 180px;
+    margin: 20px auto 10px auto;
+}
+
+/* ▬▬▬▬▬▬▬▬▬ TÍTULO ▬▬▬▬▬▬▬▬▬ */
+.title {
+    font-size: 26px;
+    color: yellow;
+    margin: 10px 0 25px 0;
+}
+
+/* ▬▬▬▬▬▬▬▬▬ BOTONES PRINCIPALES ▬▬▬▬▬▬▬▬▬ */
+.btn-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.action-btn {
+    width: 90%;
+    background: #4FC3F7;
+    border: 3px solid #004A7F;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 14px;
+    margin-bottom: 16px;
+    color: black;
+    font-weight: bold;
+}

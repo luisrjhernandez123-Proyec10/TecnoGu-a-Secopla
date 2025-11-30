@@ -1,21 +1,24 @@
-/* Página diseñada SOLO para móviles – ancho fijo tipo app */
+/* GENERAL */
 body {
     margin: 0;
     background: white;
-    width: 390px;
+    max-width: 390px;     /* 🟢 Mantiene tu diseño tipo app */
+    width: 100%;          /* 🟢 Pero se ajusta al tamaño del teléfono */
     margin: 0 auto;
-    font-family: Arial, sans-serif;}
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
 /* LOGO SUPERIOR */
 .logo-app {
-    width: 390px;
+    width: 100%;          /* Antes estaba fijo a 390px */
+    max-width: 390px;
 }
 
 /* FRANJA VERDE */
 .header-band {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     height: 80px;
     background: #00A651;
     display: flex;
@@ -29,9 +32,9 @@ body {
     border: 4px solid #FFD400;
     color: white;
     font-weight: bold;
-    padding: 8px 18px;
+    padding: 8px 12px; /* 🔥 Reducido para que quepan mejor */
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* TÍTULO */
@@ -44,22 +47,26 @@ body {
 
 /* FILAS DE ICONOS */
 .fila-iconos img {
-    width: 360px;
+    width: 95%;
+    max-width: 360px;    /* Mantiene tu tamaño original */
     margin-top: 10px;
     border-radius: 8px;
 }
 
-/* LISTAS */
+/* CONTENEDOR LISTAS + PERSONA */
 .contenedor-listas {
     margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    flex-wrap: wrap;     /* 🟢 Permite que en móviles la imagen baje si no cabe */
 }
 
+/* LISTAS */
 .listas {
     width: 55%;
+    min-width: 200px;     /* 🔥 Evita que se haga demasiado pequeño */
 }
 
 .lista {
@@ -72,4 +79,22 @@ body {
 .persona-img {
     width: 130px;
     height: auto;
+    margin-top: 10px;
+}
+
+/* 📱 Ajustes especiales para pantallas pequeñas */
+@media (max-width: 360px) {
+    .header-band button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .listas {
+        width: 100%;       /* Las listas ocupan todo el ancho */
+    }
+
+    .persona-img {
+        width: 50%;
+        margin: 15px auto;
+    }
 }
